@@ -25,8 +25,9 @@ To use any MDL component, you must include the minified CSS and JavaScript files
 Select field.
  ```html
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
-      <input class="mdl-textfield__input" id="country" name="country" value="Belarus" type="text" readonly tabIndex="-1" data-val="BLR"/>
-        <label class="mdl-textfield__label" for="country">Country</label>
+      <input class="mdl-textfield__input" id="countryLabel" name="countryLabel" value="Belarus" type="text" readonly tabIndex="-1" data-val="BLR"/>
+      <input class="mdl-textfield__input"  id="country" name="country" type="hidden"/>
+        <label class="mdl-textfield__label" for="countryLabel">Country</label>
         <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="country">
           <li class="mdl-menu__item" data-val="BLR">Belarus</li>
           <li class="mdl-menu__item" data-val="RUS">Russia</li>
