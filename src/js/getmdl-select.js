@@ -34,7 +34,12 @@
             
             [].forEach.call(list, function (li) {
                 li.onclick = function () {
-                    input.value = li.textContent;
+                    if(li.dataset.val){
+                      input.value = li.dataset.val;
+                    }else{
+                        input.value = li.textContent;
+                    }
+                    
                     dropdown.MaterialTextfield.change(li.textContent); // handles css class changes
                     setTimeout( function() {
                         dropdown.MaterialTextfield.updateClasses_(); //update css class
